@@ -18,8 +18,9 @@ class Student:
     def show_full_name(self):
         return f"your name is {self.first_name} {self.last_name}"
     def show_initials(self):
-        first_init=self.first_name[0]
-        second_init=self.last_name[0]
+        first_init=self.first_name[0].upper()
+        second_init=self.last_name[0].upper()
         return f"your name initials are{first_init} {second_init}"
 
-
+person1=Student("Joyeuse","kabanyana",21,"Rwanda")
+person1.show_initials()
